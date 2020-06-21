@@ -61,6 +61,20 @@
     background-size: contain;
   }
 
+  .psnone {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../images/personas/32.jpg');
+    background-size: contain;
+  }
+
+  .psntwo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../images/personas/26.jpg');
+    background-size: contain;
+  }
+
   a svg:hover #dribbble { 
     fill: #ea4c89;
     transition: 200ms;
