@@ -1,0 +1,130 @@
+@tailwind base;
+
+@font-face {
+    font-family: 'Larsseit';
+    src: local('Larsseit ExtraBold'), local('Larsseit-ExtraBold'),
+        url('fonts/Larsseit-ExtraBold.woff2') format('woff2'),
+        url('fonts/Larsseit-ExtraBold.woff') format('woff'),
+        url('fonts/Larsseit-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+  }
+ .lars {font-family: 'Larsseit';}
+
+  h1 {
+    font-family: 'Larsseit';
+    @apply text-6xl;
+  }
+  h2 {
+    font-family: 'Larsseit';
+    @apply text-6xl;
+  }
+  h3 {
+    font-family: 'Larsseit';
+    @apply text-6xl;
+  }
+  h4 {
+    font-family: 'Larsseit';
+  }
+  a {
+    @apply text-white;
+  }
+
+  .sbg {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url('../cropped.png');
+    background-position-x: right;
+    background-size: 37rem auto;
+  }
+
+  .kbg {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url('../konvert_86.png');
+    background-position-x: center;
+    background-size: 24em auto;
+  }
+
+  .wbg {
+    background-position: left;
+    background-repeat: no-repeat;
+    background-image: url('../week4.png');
+    background-position-x: 24px;
+    background-position-y: 190px;
+    background-size: 44em auto;
+  }
+  .hos {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../full.png');
+    background-size: contain;
+  }
+
+  a svg:hover #dribbble { 
+    fill: #ea4c89;
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transition: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
+  }
+
+  a svg:hover #linkedin { 
+    fill: #0077b5;
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transition: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
+  }
+
+  a svg:hover #medium { 
+    fill: #00ab6c;
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transition: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
+  }
+
+
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 640px) {
+  .sbg {
+    background-position: bottom right;
+    background-size: 40rem auto;
+  }
+
+  .wbg {background-position-y: 180px;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 768px) {
+  .sbg {
+    background-position: bottom right;
+    background-size: 42rem auto;
+  }
+  .wbg {background-position-y: 180px;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 1024px) {
+  .sbg {
+    background-position: bottom right;
+    background-size: 40rem auto;
+  }
+  .wbg {background-position-y: 210px;}
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1280px) {
+  .sbg {
+  background-position: bottom right;
+  background-size: 52rem auto;
+
+}
+.wbg {background-position-y: 210px;}
+}
+
+  
+@tailwind components;
+@tailwind utilities;
