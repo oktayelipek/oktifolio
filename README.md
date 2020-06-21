@@ -1,2 +1,2 @@
 # Oktifolio
- Product Designer's Portfolio
+ Product Designer's Portfolio completely for personal use.
