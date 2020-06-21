@@ -1,0 +1,49 @@
+Arguments: 
+  /usr/local/bin/node /Users/oktayelipek/.yarn/releases/yarn-1.22.4.js production
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.17.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/oktayelipek/Desktop/playground/package.json: Unexpected token } in JSON at position 476
+      at JSON.parse (<anonymous>)
+      at /Users/oktayelipek/.yarn/releases/yarn-1.22.4.js:1098:57
+      at Generator.next (<anonymous>)
+      at step (/Users/oktayelipek/.yarn/releases/yarn-1.22.4.js:310:30)
+      at /Users/oktayelipek/.yarn/releases/yarn-1.22.4.js:321:13
+
+npm manifest: 
+  {
+    "scripts": {
+      "serve": "cross-env NODE_ENV=development concurrently \"postcss public/tailwind.css -o public/build/tailwind.css --watch\"  \"live-server ./public\"",
+      "development": "cross-env NODE_ENV=development postcss public/tailwind.css -o public/build/tailwind.css",
+      "production": "cross-env NODE_ENV=production postcss public/tailwind.css -o public/build/tailwind.css",
+      "start": "npm run serve"
+    },
+    "dependencies": {
+      "autoprefixer": "^9.5.1",
+    },
+    "devDependencies": {
+      "@fullhuman/postcss-purgecss": "^1.2.0",
+      "concurrently": "^4.1.0",
+      "cross-env": "^5.2.0",
+      "cssnano": "^4.1.10",
+      "live-server": "^1.2.1",
+      "postcss-cli": "^6.1.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
